@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+
+
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+/* Lava Lamp Blob Animation */
+@keyframes lavaLamp {
+  0% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+    border-radius: 45% 55% 50% 50%;
+  }
+  25% {
+    transform: translate(-30px, 20px) scale(1.05) rotate(4deg);
+    border-radius: 50% 50% 60% 40%;
+  }
+  50% {
+    transform: translate(30px, -20px) scale(1.05) rotate(-4deg);
+    border-radius: 60% 40% 50% 50%;
+  }
+  75% {
+    transform: translate(-20px, 10px) scale(1.1) rotate(6deg);
+    border-radius: 55% 45% 40% 60%;
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+    border-radius: 45% 55% 50% 50%;
+  }
+}
+
+/* Blob Animations with Different Durations and Delays */
+.animate-lava {
+  animation: lavaLamp 8s infinite ease-in-out alternate;
+}
+
+.animate-lava-1 {
+  animation: lavaLamp 6s infinite ease-in-out alternate;
+}
+
+.animate-lava-2 {
+  animation: lavaLamp 10s infinite ease-in-out alternate;
+}
+
+.animate-lava-3 {
+  animation: lavaLamp 7s infinite ease-in-out alternate;
+}
+
+.animate-lava-4 {
+  animation: lavaLamp 9s infinite ease-in-out alternate;
+}
