@@ -32,7 +32,7 @@ const Pricing = () => {
           <motion.div 
           initial={{y: 0, scale: 1}}
           whileHover={{y: -5, scale: 1.02 }}
-          transition={{ duration: .3 }}
+          transition={{ duration: .15 }}
           className="p-6 bg-white/40 shadow-lg rounded-lg flex flex-col items-center relative z-10 ">
             <h2 className="text-3xl font-semibold text-center mt-4">Free Trial</h2>
             <p className="text-center text-xl text-gray-500 mt-2">$0.00</p>
@@ -50,7 +50,7 @@ const Pricing = () => {
           <motion.div 
           initial={{y: 0, scale: 1}}
           whileHover={{y: -5, scale: 1.02 }}
-          transition={{ duration: .3 }}
+          transition={{ duration: .15 }}
           className="relative p-6 bg-white/40 shadow-lg rounded-lg flex flex-col items-center border-4 border-blue-500">
             <div className="absolute top-[-16px] bg-blue-500 text-white text-sm font-bold px-4 py-1 rounded-full flex items-center gap-2">
               ✨ Most Popular ✨
@@ -79,7 +79,7 @@ const Pricing = () => {
           <motion.div 
           initial={{y: 0, scale: 1}}
           whileHover={{y: -5, scale: 1.02 }}
-          transition={{ duration: .3 }}
+          transition={{ duration: .15 }}
           className="p-6 bg-white/40 shadow-lg rounded-lg flex flex-col items-center relative z-10">
             <h2 className="text-3xl font-semibold text-center mt-4">Pro Plan</h2>
             <p className="text-center text-xl text-gray-500 mt-2">$399.99</p>
@@ -102,7 +102,7 @@ const Pricing = () => {
           <motion.div 
           initial={{y: 0, scale: 1}}
           whileHover={{y: -5, scale: 1.02 }}
-          transition={{ duration: .3 }}
+          transition={{ duration: .15 }}
           className="p-6 bg-white/40 shadow-lg rounded-lg flex flex-col items-center relative z-10">
             <h2 className="text-3xl font-semibold text-center mt-4">Premium Plan</h2>
             <p className="text-center text-xl text-gray-500 mt-2">$599.99</p>
