@@ -3,6 +3,9 @@ import ex from "../assets/WEB2.png"; // Desktop Image
 import iphone from "../assets/iphone.png"; // Mobile Image
 import TypingEffect from "./TypingEffect";
 import { Link } from "react-router-dom";
+import { FaLock, FaTools, FaChartBar } from "react-icons/fa";
+import gr from '../assets/gr.png'
+import Footer from "./Footer";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -17,13 +20,14 @@ const Hero = () => {
   }, []);
 
   // Limit the scroll effect (for example, stop at 150px)
-  const maxScroll = 150;
-  const scrollEffect = Math.min(scrollY * 0.1, maxScroll);
+  const maxScroll = 150; 
+  const scrollEffect = Math.min(scrollY * 0.05, maxScroll);
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center px-4 mt-80">
+    <div className="mt-70 relative min-h-screen bg-gray-50 overflow-auto flex flex-col items-center justify-center"> {/* Updated Hero Section to Center Content */}
+      
       {/* Header Text */}
-      <h1 className="h-30 text-7xl font-bold text-center bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+      <h1 className="text-7xl font-bold text-center bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 bg-clip-text text-transparent">
         <TypingEffect text={"Master Cybersecurity With CyberWise"} speed={30} />
       </h1>
 
@@ -34,8 +38,12 @@ const Hero = () => {
 
       {/* Buttons */}
       <div className="flex space-x-4 mt-8">
-        <button className="px-6 py-3 text-white bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"><Link to={"/pricing"}>Start Now →</Link></button>
-        <button className="px-6 py-3 text-blue-700 border-2 border-blue-700 rounded-xl hover:bg-blue-700 hover:text-white transition duration-300"><Link to={"/contact"}>Contact Sales →</Link></button>
+        <button className="px-6 py-3 text-white bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+          <Link to={"/pricing"}>Start Now →</Link>
+        </button>
+        <button className="px-6 py-3 text-blue-700 border-2 border-blue-700 rounded-xl hover:bg-blue-700 hover:text-white transition duration-300">
+          <Link to={"/contact"}>Contact Sales →</Link>
+        </button>
       </div>
 
       {/* App Preview Section */}
@@ -51,7 +59,7 @@ const Hero = () => {
 
         {/* Mobile Preview with Scroll Effect */}
         <div
-          className="absolute right-[-10%] w-[220px]"
+          className="absolute top-[5%] right-[-7%] w-[180px]"
           style={{
             transform: `translateY(${scrollEffect}px)`, // Apply the limited scroll effect
           }}
@@ -63,6 +71,52 @@ const Hero = () => {
           />
         </div>
       </div>
+
+      {/* Features Section */}
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 px-4 max-w-7xl mb-20">
+        {/* Feature 1 */}
+        <div className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg">
+          <FaLock className="text-4xl text-blue-600 mb-4" />
+          <h3 className="text-2xl font-semibold text-gray-800">Enhanced Security</h3>
+          <p className="text-center text-gray-600 mt-2">
+            Protect your data with state-of-the-art security measures, keeping everything safe from cyber threats.
+          </p>
+        </div>
+
+        {/* Feature 2 */}
+        <div className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg">
+          <FaTools className="text-4xl text-yellow-600 mb-4" />
+          <h3 className="text-2xl font-semibold text-gray-800">Advanced Tools</h3>
+          <p className="text-center text-gray-600 mt-2">
+            Use industry-leading tools and techniques to strengthen your understanding of network security.
+          </p>
+        </div>
+
+        {/* Feature 3 */}
+        <div className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg">
+          <FaChartBar className="text-4xl text-green-600 mb-4" />
+          <h3 className="text-2xl font-semibold text-gray-800">Real-Time Analytics</h3>
+          <p className="text-center text-gray-600 mt-2">
+            Get actionable insights with real-time data to monitor and assess network performance and security.
+          </p>
+        </div>
+      </div>
+      <div className="mt-32 mb-20 flex items-center justify-center gap-12 px-4">
+        {/* Statistic Text */}
+        <div className="text-center max-w-lg">
+          <h3 className="text-4xl font-semibold text-gray-800">10,000+ Students Trained</h3>
+          <p className="text-xl text-gray-600 mt-4">
+            Join a community of over 10,000 students who have already started their journey towards mastering cybersecurity with CyberWise.
+          </p>
+        </div>
+
+        {/* Statistic Image */}
+        <div className="w-[300px] h-[300px] bg-gray-300 rounded-full shadow-lg flex items-center justify-center">
+          <img src={gr} alt="" />
+          <p className="text-white text-4xl"></p> {/* Placeholder for the image */}
+        </div>
+      </div>
+      <Footer/>
     </div>
   );
 };

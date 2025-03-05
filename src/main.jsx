@@ -8,6 +8,7 @@ import Documentation from './components/Documentation.jsx'
 import Products from './components/Products.jsx'
 import AboutUs from './components/AboutUs.jsx'
 import Payment from './components/Payment.jsx'
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
  
 const router = createBrowserRouter([
