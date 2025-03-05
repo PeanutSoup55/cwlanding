@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ex from "../assets/WEB2.png"; // Desktop Image
 import iphone from "../assets/iphone.png"; // Mobile Image
 import TypingEffect from "./TypingEffect";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -22,7 +23,7 @@ const Hero = () => {
   return (
     <div className="h-screen flex flex-col items-center justify-center px-4 mt-80">
       {/* Header Text */}
-      <h1 className="text-7xl font-bold text-center bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+      <h1 className="h-30 text-7xl font-bold text-center bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 bg-clip-text text-transparent">
         <TypingEffect text={"Master Cybersecurity With CyberWise"} speed={30} />
       </h1>
 
@@ -33,12 +34,8 @@ const Hero = () => {
 
       {/* Buttons */}
       <div className="flex space-x-4 mt-8">
-        <button className="px-6 py-3 text-white bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-          Start Now →
-        </button>
-        <button className="px-6 py-3 text-blue-700 border-2 border-blue-700 rounded-xl hover:bg-blue-700 hover:text-white transition duration-300">
-          Contact Sales →
-        </button>
+        <button className="px-6 py-3 text-white bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"><Link to={"/pricing"}>Start Now →</Link></button>
+        <button className="px-6 py-3 text-blue-700 border-2 border-blue-700 rounded-xl hover:bg-blue-700 hover:text-white transition duration-300"><Link to={"/contact"}>Contact Sales →</Link></button>
       </div>
 
       {/* App Preview Section */}
