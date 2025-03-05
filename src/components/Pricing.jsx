@@ -27,8 +27,8 @@ const Pricing = () => {
         </p>
 
         {/* Pricing Cards */}
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-7xl">
-            <div className="p-6 bg-white shadow-lg rounded-lg flex flex-col items-center relative z-10">
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-7xl ">
+            <div className="p-6 bg-white/40 shadow-lg rounded-lg flex flex-col items-center relative z-10 ">
             <h2 className="text-3xl font-semibold text-center">Free Trial</h2>
             <p className="text-center text-xl text-gray-500 mt-2">$0.00</p>
             <ul className="mt-4 text-gray-600 text-center space-y-2">
@@ -39,7 +39,7 @@ const Pricing = () => {
             </Link>
           </div>
           {/* Basic Plan */}
-          <div className="p-6 bg-white shadow-lg rounded-lg flex flex-col items-center relative z-10">
+          <div className="p-6 bg-white/40 shadow-lg rounded-lg flex flex-col items-center relative z-10">
             <h2 className="text-3xl font-semibold text-center">Basic Plan</h2>
             <p className="text-center text-xl text-gray-500 mt-2">$199.99</p>
             <ul className="mt-4 text-gray-600 text-center space-y-2">
@@ -53,7 +53,7 @@ const Pricing = () => {
           </div>
 
           {/* Pro Plan */}
-          <div className="p-6 bg-white shadow-lg rounded-lg flex flex-col items-center relative z-10">
+          <div className="p-6 bg-white/40 shadow-lg rounded-lg flex flex-col items-center relative z-10">
             <h2 className="text-3xl font-semibold text-center">Pro Plan</h2>
             <p className="text-center text-xl text-gray-500 mt-2">$399.99</p>
             <ul className="mt-4 text-gray-600 text-center space-y-2">
@@ -69,7 +69,7 @@ const Pricing = () => {
           </div>
 
           {/* Premium Plan */}
-          <div className="p-6 bg-white shadow-lg rounded-lg flex flex-col items-center relative z-10">
+          <div className="p-6 bg-white/40 shadow-lg rounded-lg flex flex-col items-center relative z-10">
             <h2 className="text-3xl font-semibold text-center">Premium Plan</h2>
             <p className="text-center text-xl text-gray-500 mt-2">$599.99</p>
             <ul className="mt-4 text-gray-600 text-center space-y-2">
