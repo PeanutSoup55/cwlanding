@@ -10,9 +10,8 @@ const Navbar = () => {
         <div className="space-x-8 text-black">
           <ul className="list-none flex gap-10">
               <li><Link to="/pricing" className="hover:text-blue-500 cursor-pointer">Pricing</Link></li>
-              <li><Link to="/products" className="hover:text-blue-500 cursor-pointer">Products</Link></li>
               <li><Link to="/documentation" className="hover:text-blue-500 cursor-pointer">Documentation</Link></li>
-              <li><Link to="/about" className="hover:text-blue-500 cursor-pointer">About us</Link></li>
+              <li><Link to="/about" className="hover:text-blue-500 cursor-pointer">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-blue-500 cursor-pointer">Contact</Link></li>
           </ul>
         </div>

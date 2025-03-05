@@ -4,7 +4,7 @@ import iphone from "../assets/iphone.png"; // Mobile Image
 import TypingEffect from "./TypingEffect";
 import { Link } from "react-router-dom";
 import { FaLock, FaTools, FaChartBar } from "react-icons/fa";
-import gr from '../assets/gr.png'
+import pep from '../assets/pep.jpg'
 import Footer from "./Footer";
 
 const Hero = () => {
@@ -26,10 +26,10 @@ const Hero = () => {
   return (
     <div className="mt-70 relative min-h-screen bg-gray-50 overflow-auto flex flex-col items-center justify-center"> {/* Updated Hero Section to Center Content */}
       
-      {/* Header Text */}
-      <h1 className="text-7xl font-bold text-center bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+      <h1 className="text-7xl font-bold text-center leading-normal bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 bg-clip-text text-transparent">
         <TypingEffect text={"Master Cybersecurity With CyberWise"} speed={30} />
       </h1>
+
 
       {/* Description */}
       <p className="max-w-4xl text-xl text-center text-gray-600 mt-4">
@@ -111,8 +111,8 @@ const Hero = () => {
         </div>
 
         {/* Statistic Image */}
-        <div className="w-[300px] h-[300px] bg-gray-300 rounded-full shadow-lg flex items-center justify-center">
-          <img src={gr} alt="" />
+        <div className="w-[500px]   shadow-lg flex items-center justify-center">
+          <img src={pep} alt="" />
           <p className="text-white text-4xl"></p> {/* Placeholder for the image */}
         </div>
       </div>

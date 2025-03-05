@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^3.3.0",
+    "@stripe/stripe-js": "^5.8.0",
     "@tailwindcss/vite": "^4.0.9",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
