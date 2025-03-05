@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { FaLock, FaTools, FaChartBar } from "react-icons/fa";
 import pep from '../assets/pep.jpg'
 import Footer from "./Footer";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -27,7 +28,7 @@ const Hero = () => {
     <div className="mt-70 relative min-h-screen bg-gray-50 overflow-auto flex flex-col items-center justify-center"> {/* Updated Hero Section to Center Content */}
       
       <h1 className="text-7xl font-bold text-center leading-normal bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-        <TypingEffect text={"Master Cybersecurity With CyberWise"} speed={30} />
+        <TypingEffect text={"Master Cybersecurity With CyberWise"} speed={70} />
       </h1>
 
 
@@ -73,7 +74,11 @@ const Hero = () => {
       </div>
 
       {/* Features Section */}
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 px-4 max-w-7xl mb-20">
+      <motion.div 
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: .9 }}
+      className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 px-4 max-w-7xl mb-20">
         {/* Feature 1 */}
         <div className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg">
           <FaLock className="text-4xl text-blue-600 mb-4" />
@@ -100,21 +105,30 @@ const Hero = () => {
             Get actionable insights with real-time data to monitor and assess network performance and security.
           </p>
         </div>
-      </div>
+      </motion.div>
+
       <div className="mt-32 mb-20 flex items-center justify-center gap-12 px-4">
         {/* Statistic Text */}
-        <div className="text-center max-w-lg">
+        <motion.div 
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: .6 }}
+        className="text-center max-w-lg">
           <h3 className="text-4xl font-semibold text-gray-800">10,000+ Students Trained</h3>
           <p className="text-xl text-gray-600 mt-4">
             Join a community of over 10,000 students who have already started their journey towards mastering cybersecurity with CyberWise.
           </p>
-        </div>
+        </motion.div>
 
         {/* Statistic Image */}
-        <div className="w-[500px]   shadow-lg flex items-center justify-center">
+        <motion.div 
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: .6 }}
+        className="w-[500px]   shadow-lg flex items-center justify-center">
           <img src={pep} alt="" />
           <p className="text-white text-4xl"></p> {/* Placeholder for the image */}
-        </div>
+        </motion.div>
       </div>
       <Footer/>
     </div>
