@@ -16,25 +16,25 @@ const Documentation = () => {
         <h2 className="text-2xl font-semibold">Documentation</h2>
         <ul className="space-y-2">
           <li>
-            <Link to="/documentation/getting-started" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
+            <Link to="/started" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
               <FaUser />
               Getting Started
             </Link>
           </li>
           <li>
-            <Link to="/documentation/dev-story" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
+            <Link to="/story" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
               <FaFileCode />
               Developer Story
             </Link>
           </li>
           <li>
-            <Link to="/documentation/user-guides" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
+            <Link to="/guides" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
               <FaCogs />
               User Guides
             </Link>
           </li>
           <li>
-            <Link to="/documentation/security" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
+            <Link to="/security" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
               <FaShieldAlt />
               Security
             </Link>

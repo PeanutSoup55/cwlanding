@@ -3,7 +3,7 @@ import Navbar from "./Navbar";  // Make sure you have this imported
 import Footer from "./Footer";  // Make sure you have this imported
 import stClairImage from "../assets/stclair.png"; // Example Image - Replace with actual image
 
-const AboutUs = () => {
+const OurStory = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -81,4 +81,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default OurStory;

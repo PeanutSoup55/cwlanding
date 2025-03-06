@@ -5,9 +5,13 @@ import App from './App.jsx'
 import Pricing from './components/Pricing.jsx'
 import Contact from './components/Contact.jsx'
 import Documentation from './components/Documentation.jsx'
-import Products from './components/Products.jsx'
-import AboutUs from './components/AboutUs.jsx'
+
+import OurStory from './components/OurStory.jsx'
 import Payment from './components/Payment.jsx'
+import DevStory from './components/documentation/DevStory.jsx'
+import GettingStarted from './components/documentation/GettingStarted.jsx'
+import Security from './components/documentation/Security.jsx'
+import UserGuides from './components/documentation/UserGuides.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
  
@@ -29,16 +33,28 @@ const router = createBrowserRouter([
     element: <Documentation/>,
   },
   {
-    path: '/products',
-    element: <Products/>,
-  },
-  {
-    path: '/about',
-    element: <AboutUs/>,
+    path: '/our-story',
+    element: <OurStory/>,
   },
   {
     path: '/payment',
     element: <Payment/>,
+  },
+  {
+    path: '/started',
+    element: <GettingStarted/>,
+  },
+  {
+    path: '/security',
+    element: <Security/>,
+  },
+  {
+    path: '/guides',
+    element: <UserGuides/>,
+  },
+  {
+    path: '/story',
+    element: <DevStory/>,
   },
 ]);
 

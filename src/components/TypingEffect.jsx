@@ -5,29 +5,29 @@ const TypingEffect = ({ text, speed }) => {
   const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
-    // Check if text is valid
     if (!text || text.length === 0) {
-      setIsTyping(false);  // If no text, stop typing effect immediately
-      return;  // Exit early
+      setIsTyping(false);
+      return;
     }
-
-    let index = -1;  // Start index at -1 to ensure the first letter is typed correctly
-    const lastIndex = text.length - 1;  // The last index of the text
-
-    // Begin typing effect only if text is valid
+  
+    setDisplayedText(''); // Reset state before starting typing effect
+  
+    let index = -1;
+    const lastIndex = text.length - 1;
+  
     const interval = setInterval(() => {
-      index += 1;  // Increment the index to type the next character
+      index += 1;
       setDisplayedText((prevText) => prevText + text[index]);
-
-      // If index reaches the last character, stop the typing effect
+  
       if (index === lastIndex) {
         clearInterval(interval);
-        setIsTyping(false);  // Stop the cursor
+        setIsTyping(false);
       }
     }, speed);
-
-    return () => clearInterval(interval);  // Cleanup interval on unmount
+  
+    return () => clearInterval(interval);
   }, [text, speed]);
+  
 
   return (
     <div>
