@@ -7,12 +7,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="top-0 left-0 w-full bg-transparent py-4 relative z-50">
+    <nav className="top-0 left-0 w-full bg-transparent py-4 border-b-0 border-transparent transition-all duration-200 hover:border-gray-500 hover:shadow-lg hover:shadow-gray-500/50">
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <button className="text-black font-semibold text-xl">
           <Link to={"/"}>
-            <img src={cw} alt="CW" className="h-12 w-auto" />
+            <img src={cw} alt="CW" className="h-16 w-auto" />
           </Link>
         </button>
 
