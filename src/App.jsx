@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div className="relative min-h-screen bg-gray-50 overflow-hidden">
+    <div className=" relative min-h-screen bg-gray-50 overflow-hidden">
       
       <Navbar />
       <Hero />

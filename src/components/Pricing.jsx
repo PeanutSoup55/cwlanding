@@ -47,14 +47,14 @@ const Pricing = () => {
           <PricingCard 
             title="Pro Plan" 
             price="$399.99" 
-            features={["Access to all course materials", "6 months of support", "Priority assistance", "Professional Course completion certificate"]} 
+            features={["Full course materials", "6 months of support", "Priority assistance", "Professional Course completion certificate"]} 
             link="https://buy.stripe.com/test_cN2g1Acfa1fddmE4gh"
           />
 
           <PricingCard 
             title="Premium Plan" 
             price="$599.99" 
-            features={["Full course access", "Lifetime support", "Priority assistance", "Course completion certificate"]} 
+            features={["Full course access", "Lifetime support", "Priority assistance", "Professional course completion certificate", "Access to new future course material"]} 
             link="https://buy.stripe.com/test_7sIbLk2EA0b91DWdQS"
           />
         </div>

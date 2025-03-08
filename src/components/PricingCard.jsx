@@ -19,7 +19,7 @@ const PricingCard = ({ title, price, features, link, popular }) => {
       <h2 className="text-3xl font-semibold text-center mt-4">{title}</h2>
       <p className="text-center text-xl text-gray-500 mt-2">{price}</p>
 
-      <ul className="mt-4 text-gray-600 text-center space-y-2">
+      <ul className="mt-4 mb-4 text-gray-600 text-center space-y-2">
         {features.map((feature, index) => (
           <li key={index}>{feature}</li>
         ))}
@@ -27,7 +27,7 @@ const PricingCard = ({ title, price, features, link, popular }) => {
 
       <a
         href={link}
-        className="mt-6 text-white bg-blue-600 px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition duration-200"
+        className="mt-auto text-white bg-blue-600 px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition duration-200"
       >
         Start Now
       </a>

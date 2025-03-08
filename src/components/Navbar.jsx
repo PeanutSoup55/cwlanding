@@ -7,24 +7,49 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="top-0 left-0 w-full bg-transparent py-4 border-b-0 border-transparent transition-all duration-200 hover:border-gray-500 hover:shadow-lg hover:shadow-gray-500/50">
-      <div className="container mx-auto px-4 flex justify-between items-center">
+    <nav className=" top-0 left-0 w-full bg-transparent py-4 z-50 border-b-0 border-transparent transition-all duration-200 hover:border-gray-500 hover:shadow-lg hover:shadow-gray-500/50">
+      <div className="container max-w-[90%] mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <button className="text-black font-semibold text-xl">
-          <Link to={"/"}>
-            <img src={cw} alt="CW" className="h-16 w-auto" />
-          </Link>
-        </button>
+        <Link to={"/"} className="flex items-center space-x-3 relative z-50 backdrop-blur-md bg-white/30 px-6 py-3 rounded-xl shadow-lg border border-white/40">
+          <img src={cw} alt="CW" className="h-16 w-auto" />
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            CyberWise
+          </h1>
+        </Link>
+
+
+
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8 text-black">
-          <ul className="list-none flex gap-10">
-            <li><Link to="/pricing" className="hover:text-blue-500 cursor-pointer">Pricing</Link></li>
-            <li><Link to="/documentation" className="hover:text-blue-500 cursor-pointer">Documentation</Link></li>
-            <li><Link to="/our-story" className="hover:text-blue-500 cursor-pointer">Our Story</Link></li>
-            <li><Link to="/contact" className="hover:text-blue-500 cursor-pointer">Contact</Link></li>
+        <div className="hidden md:flex items-center space-x-6">
+          <ul className="flex gap-8 text-lg font-medium text-gray-900">
+            <li>
+              <Link to="/pricing" className="relative group">
+                Pricing
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/documentation" className="relative group">
+                Documentation
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/our-story" className="relative group">
+                Our Story
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="relative group">
+                Contact
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
           </ul>
         </div>
+
 
         {/* Mobile Menu Button */}
         <button className="md:hidden text-2xl" onClick={() => setIsOpen(!isOpen)}>
