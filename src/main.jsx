@@ -12,6 +12,7 @@ import DevStory from './components/documentation/DevStory.jsx'
 import GettingStarted from './components/documentation/GettingStarted.jsx'
 import Security from './components/documentation/Security.jsx'
 import UserGuides from './components/documentation/UserGuides.jsx'
+import AboutThisSite from './components/documentation/AboutThisSite.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
  
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
   {
     path: '/story',
     element: <DevStory/>,
+  },
+  {
+    path: '/about-site',
+    element: <AboutThisSite/>,
   },
 ]);
 

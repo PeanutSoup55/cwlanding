@@ -15,31 +15,27 @@ const Documentation = () => {
       <div className="w-64 bg-gray-800 text-white p-6 space-y-4">
         <h2 className="text-2xl font-semibold">Documentation</h2>
         <ul className="space-y-2">
-          <li>
-            <Link to="/started" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
-              <FaUser />
-              Getting Started
-            </Link>
-          </li>
-          <li>
-            <Link to="/story" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
-              <FaFileCode />
-              Developer Story
-            </Link>
-          </li>
-          <li>
-            <Link to="/guides" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
-              <FaCogs />
-              User Guides
-            </Link>
-          </li>
-          <li>
-            <Link to="/security" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
-              <FaShieldAlt />
-              Security
-            </Link>
-          </li>
-        </ul>
+            <li>
+              <Link to="/started" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
+                <FaUser /> Getting Started
+              </Link>
+            </li>
+            <li>
+              <Link to="/guides" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
+                <FaCogs /> User Guides
+              </Link>
+            </li>
+            <li>
+              <Link to="/security" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
+                <FaShieldAlt /> Security
+              </Link>
+            </li>
+            <li>
+              <Link to="/about-site" className="flex items-center gap-2 hover:bg-gray-700 p-2 rounded-md">
+                <FaFileCode/> About This Site
+              </Link>
+            </li>
+          </ul>
       </div>
 
       {/* Content Area */}
