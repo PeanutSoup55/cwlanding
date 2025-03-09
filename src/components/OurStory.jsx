@@ -32,9 +32,9 @@ const OurStory = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 mb-20">
           {/* Founder 1 */}
           <div className="lg:w-1/2 text-center lg:text-left space-y-4 px-4">
-            <h3 className="text-2xl font-semibold text-gray-800">Founder Name 1</h3>
-            <p className="text-lg text-gray-500">Position in the Company</p> {/* Subtitle */}
-            <p className="text-lg text-gray-600">
+            <h3 className="text-4xl font-semibold text-gray-800">Founder Name 1</h3>
+            <p className="text-md text-gray-500">Position in the Company</p> {/* Subtitle */}
+            <p className="text-lg text-gray-700">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt arcu urna, vel efficitur ante auctor ac.
             </p>
           </div>
@@ -46,8 +46,8 @@ const OurStory = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 mb-20">
           {/* Founder 2 */}
           <div className="lg:w-1/2 text-center lg:text-left space-y-4 px-4">
-            <h3 className="text-2xl font-semibold text-gray-800">Founder Name 2</h3>
-            <p className="text-lg text-gray-500">Position in the Company</p> {/* Subtitle */}
+            <h3 className="text-4xl font-semibold text-gray-800">Founder Name 2</h3>
+            <p className="text-md text-gray-500">Position in the Company</p> {/* Subtitle */}
             <p className="text-lg text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non nulla odio. Integer suscipit fringilla.
             </p>
@@ -60,8 +60,8 @@ const OurStory = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 mb-20">
           {/* Founder 3 */}
           <div className="lg:w-1/2 text-center lg:text-left space-y-4 px-4">
-            <h3 className="text-2xl font-semibold text-gray-800">Founder Name 3</h3>
-            <p className="text-lg text-gray-500">Position in the Company</p> {/* Subtitle */}
+            <h3 className="text-4xl font-semibold text-gray-800">Founder Name 3</h3>
+            <p className="text-md text-gray-500">Position in the Company</p> {/* Subtitle */}
             <p className="text-lg text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra mollis augue, vel dictum elit sagittis at.
             </p>
@@ -74,8 +74,8 @@ const OurStory = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 mb-20">
           {/* Founder 4 */}
           <div className="lg:w-1/2 text-center lg:text-left space-y-4 px-4">
-            <h3 className="text-2xl font-semibold text-gray-800">Founder Name 4</h3>
-            <p className="text-lg text-gray-500">Position in the Company</p> {/* Subtitle */}
+            <h3 className="text-4xl font-semibold text-gray-800">Founder Name 4</h3>
+            <p className="text-md text-gray-500">Position in the Company</p> {/* Subtitle */}
             <p className="text-lg text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue ligula sed tortor dictum, nec dignissim lorem.
             </p>

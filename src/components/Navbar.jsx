@@ -7,11 +7,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" top-0 left-0 w-full bg-transparent py-4 z-50 border-b-0 border-transparent transition-all duration-200 hover:border-gray-500 hover:shadow-lg hover:shadow-gray-500/50">
-      <div className="container max-w-[90%] mx-auto px-4 flex justify-between items-center">
+    <nav className=" top-0 left-0 w-full bg-transparent py-1 z-50 border-b-0 border-transparent transition-all duration-200 hover:border-gray-500 hover:shadow-lg hover:shadow-gray-500/50">
+      <div className="container max-w-[95%] mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <Link to={"/"} className="flex items-center space-x-3 relative z-50 backdrop-blur-md bg-white/30 px-6 py-3 rounded-xl shadow-lg border border-white/40">
-          <img src={cw} alt="CW" className="h-16 w-auto" />
+        <Link to={"/"} className="flex items-center space-x-3 relative z-50  px-6 py-3 rounded-xl ">
+          <img src={cw} alt="CW" className="h-14 w-auto" />
           <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 bg-clip-text text-transparent">
             CyberWise
           </h1>
