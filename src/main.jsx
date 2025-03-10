@@ -8,7 +8,6 @@ import Documentation from './components/Documentation.jsx'
 
 import OurStory from './components/OurStory.jsx'
 import Payment from './components/Payment.jsx'
-import DevStory from './components/documentation/DevStory.jsx'
 import GettingStarted from './components/documentation/GettingStarted.jsx'
 import Security from './components/documentation/Security.jsx'
 import UserGuides from './components/documentation/UserGuides.jsx'
@@ -53,10 +52,7 @@ const router = createBrowserRouter([
     path: '/guides',
     element: <UserGuides/>,
   },
-  {
-    path: '/story',
-    element: <DevStory/>,
-  },
+
   {
     path: '/about-site',
     element: <AboutThisSite/>,
