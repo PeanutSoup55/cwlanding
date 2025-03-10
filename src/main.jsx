@@ -7,12 +7,12 @@ import Contact from './components/Contact.jsx'
 import Documentation from './components/Documentation.jsx'
 
 import OurStory from './components/OurStory.jsx'
-import Payment from './components/Payment.jsx'
+
 import GettingStarted from './components/documentation/GettingStarted.jsx'
 import Security from './components/documentation/Security.jsx'
 import UserGuides from './components/documentation/UserGuides.jsx'
 import AboutThisSite from './components/documentation/AboutThisSite.jsx'
-import PaymentButton from './components/payment/PaymentButton.jsx'
+
 import PaymentSuccess from './components/payment/PaymentSuccess.jsx'
 import Register from './components/payment/Resgister.jsx'
 
@@ -39,10 +39,7 @@ const router = createBrowserRouter([
     path: '/our-story',
     element: <OurStory/>,
   },
-  {
-    path: '/payment',
-    element: <Payment/>,
-  },
+ 
   {
     path: '/started',
     element: <GettingStarted/>,
