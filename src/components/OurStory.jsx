@@ -21,7 +21,7 @@ const OurStory = () => {
         <div className="absolute inset-0 bg-black opacity-70"></div> {/* Overlay to darken the image */}
         <div className="relative z-10 px-4">
           <h1 className="text-6xl font-bold mb-4">Our Story</h1>
-          <p className="text-2xl mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+          <p className="text-2xl mb-8">From College to Colleagues to Company</p>
         </div>
       </div>
 

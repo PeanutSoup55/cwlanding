@@ -18,7 +18,7 @@ const Register = () => {
   return paymentVerified ? (
     <div>
       <h2>Complete Your Registration</h2>
-      {/* Registration form goes here */}
+      
     </div>
   ) : (
     <div>Redirecting...</div>
